@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+#brand-logo {
+    width: 200px;
+  height: 60px;
+  /* border: 1px solid green; */
+}
+
+#menu-links:hover {
+    color: #F58840;
+    transition-delay: 0.3s;
+  /* border: 1px solid green; */
+}
+
+#overlay {
+    width: auto;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+/* #overlay-title {
+    padding: 10rem;
+    max-width: 100%;
+    font-size: rem;
+} */

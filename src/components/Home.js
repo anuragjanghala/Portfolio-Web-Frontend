@@ -1,13 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ResponsiveAppBar from "./ResponsiveAppBar";
-import ProjectList from "./ProjectList";
 import Header from "./Header";
+import LandingPage from "./LandingPage";
+import "../css/home.css";
+// import ProjectList from "./ProjectList";
 
 const Home = () => {
   return (
     <>
-      <ResponsiveAppBar />
+      <Header />
+      <LandingPage />
       <main>
         <h2>Welcome to the homepage!</h2>
         <p>You can do this, I believe in you.</p>
