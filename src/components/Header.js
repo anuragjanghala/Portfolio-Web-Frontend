@@ -19,11 +19,18 @@ import "@fontsource/roboto/700.css";
 import Logo from "../assets/signature.png";
 import Logindp from "../assets/ajdp.png";
 import "../css/home.css";
+import { Link } from "react-router-dom";
 
-const pages = ["Home", "About Me", "Skills", "Projects"];
+// const pages = ["Home", "About Me", "Skills", "Projects", "Login"];
 const settings = ["Account", "Add Project", "Inbox", "Dashboard", "Logout"];
 
 const Header = () => {
+  // const isLoggedIn = this.state.isLoggedIn;
+  const myStyles = {
+    color: "Black",
+    textTransform: "capitalize",
+    textDecoration: "none",
+  };
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -84,11 +91,49 @@ const Header = () => {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
+              {/* {pages.map((page) => ( */}
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">
+                  <Link style={myStyles} component="NavLink" to="/">
+                    Home
+                  </Link>
+                </Typography>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">
+                  <Link style={myStyles} component="NavLink" to="/">
+                    About Me
+                  </Link>
+                </Typography>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">
+                  <Link style={myStyles} component="NavLink" to="/">
+                    Skills
+                  </Link>
+                </Typography>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">
+                  <Link style={myStyles} component="NavLink" to="/">
+                    Projects
+                  </Link>
+                </Typography>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">
+                  <Link style={myStyles} component="NavLink" to="/login">
+                    Login
+                  </Link>
+                </Typography>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">
+                  <Link style={myStyles} component="NavLink" to="/logout">
+                    Logout
+                  </Link>
+                </Typography>
+              </MenuItem>
             </Menu>
           </Box>
           <Typography
@@ -110,10 +155,14 @@ const Header = () => {
               },
             }}
           >
-            {pages.map((page) => (
+            {/* {pages.map((page) => ( */}
+            <Link
+              style={{ textDecoration: "none" }}
+              component="NavLink"
+              to="/login"
+            >
               <IconButton
                 id="menu-links"
-                key={page}
                 onClick={handleCloseNavMenu}
                 sx={{
                   typography: "subtitle1",
@@ -126,9 +175,119 @@ const Header = () => {
                   textTransform: "capitalize",
                 }}
               >
-                {page}
+                Home
               </IconButton>
-            ))}
+            </Link>
+            <Link
+              style={{ textDecoration: "none" }}
+              component="NavLink"
+              to="/login"
+            >
+              <IconButton
+                id="menu-links"
+                onClick={handleCloseNavMenu}
+                sx={{
+                  typography: "subtitle1",
+                  fontSize: "default",
+                  fontWeight: "Medium",
+                  my: 2,
+                  color: "White",
+                  display: "block",
+                  mr: "3rem",
+                  textTransform: "capitalize",
+                }}
+              >
+                About Me
+              </IconButton>
+            </Link>
+            <Link
+              style={{ textDecoration: "none" }}
+              component="NavLink"
+              to="/login"
+            >
+              <IconButton
+                id="menu-links"
+                onClick={handleCloseNavMenu}
+                sx={{
+                  typography: "subtitle1",
+                  fontSize: "default",
+                  fontWeight: "Medium",
+                  my: 2,
+                  color: "White",
+                  display: "block",
+                  mr: "3rem",
+                  textTransform: "capitalize",
+                }}
+              >
+                Skills
+              </IconButton>
+            </Link>
+            <Link
+              style={{ textDecoration: "none" }}
+              component="NavLink"
+              to="/login"
+            >
+              <IconButton
+                id="menu-links"
+                onClick={handleCloseNavMenu}
+                sx={{
+                  typography: "subtitle1",
+                  fontSize: "default",
+                  fontWeight: "Medium",
+                  my: 2,
+                  color: "White",
+                  display: "block",
+                  mr: "3rem",
+                  textTransform: "capitalize",
+                }}
+              >
+                Projects
+              </IconButton>
+            </Link>
+            <Link
+              style={{ textDecoration: "none" }}
+              component="NavLink"
+              to="/login"
+            >
+              <IconButton
+                id="menu-links"
+                onClick={handleCloseNavMenu}
+                sx={{
+                  typography: "subtitle1",
+                  fontSize: "default",
+                  fontWeight: "Medium",
+                  my: 2,
+                  color: "White",
+                  display: "block",
+                  mr: "3rem",
+                  textTransform: "capitalize",
+                }}
+              >
+                Login
+              </IconButton>
+            </Link>
+            <Link
+              style={{ textDecoration: "none" }}
+              component="NavLink"
+              to="/logout"
+            >
+              <IconButton
+                id="menu-links"
+                onClick={handleCloseNavMenu}
+                sx={{
+                  typography: "subtitle1",
+                  fontSize: "default",
+                  fontWeight: "Medium",
+                  my: 2,
+                  color: "White",
+                  display: "block",
+                  mr: "3rem",
+                  textTransform: "capitalize",
+                }}
+              >
+                Logout
+              </IconButton>
+            </Link>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>

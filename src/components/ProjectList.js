@@ -17,7 +17,10 @@ export default class ProjectList extends React.Component {
     return (
       <ul>
         {this.state.projects.map((project) => (
-          <li key={project.id}>{project.title}</li>
+          <li key={project.id}>
+            {project.title}
+            {project.gh_links}
+          </li>
         ))}
       </ul>
     );
