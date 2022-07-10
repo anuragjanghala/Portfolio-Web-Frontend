@@ -1,6 +1,6 @@
 import { Container, Typography } from "@mui/material";
 import React from "react";
-import bg_img from "../assets/bg-img.jpg";
+import bg_img from "../../assets/Image/bg-img.jpg";
 
 const LandingPage = () => {
   return (

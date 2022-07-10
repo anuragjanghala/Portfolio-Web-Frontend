@@ -16,9 +16,9 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
-import Logo from "../assets/signature.png";
-import Logindp from "../assets/ajdp.png";
-import "../css/home.css";
+import Logo from "../../assets/Image/signature.png";
+import Logindp from "../../assets/Image/ajdp.png";
+import "../../pages/Home/home.css";
 import { Link } from "react-router-dom";
 
 // const pages = ["Home", "About Me", "Skills", "Projects", "Login"];

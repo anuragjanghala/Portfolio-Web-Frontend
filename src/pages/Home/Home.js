@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Header from "./Header";
-import LandingPage from "./LandingPage";
-import "../css/home.css";
-import LogoSlider from "./LogoSlider";
-import ProjectList from "./ProjectList";
+import Header from "../../Layouts/Header/Header";
+import LandingPage from "../LandingPage/LandingPage";
+import "./home.css";
+import LogoSlider from "../../components/LogoSlider/LogoSlider";
+import ProjectList from "../../components/Project/ProjectList";
 
 const Home = () => {
   return (

@@ -1,8 +1,8 @@
 import { Container } from "@mui/material";
 import React from "react";
-import skilllogo from "../assets/logo-slider/git.png";
-import jenkins from "../assets/logo-slider/jenkins.png";
-import "../css/slider.css";
+import skilllogo from "../../assets/Image/logo-slider/git.png";
+import jenkins from "../../assets/Image/logo-slider/jenkins.png";
+import "./slider.css";
 
 const LogoSlider = () => {
   return (
