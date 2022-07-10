@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import ProjectPage from "./components/ProjectPage";
+import ProjectPage from "./components/Project/ProjectPage";
 import Home from "./components/Home";
 import Login from "./components/Login";
 import Logout from "./components/Logout";
